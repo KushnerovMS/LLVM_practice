@@ -6,12 +6,19 @@
 
 ## Build and run
 
-Build with
+Build
 ```bash
-./build.sh
+mkdir build; cd build
+cmake ..
+cmake --build .
 ```
 
 Run
 ```bash
-./app.out
+./GraphicApp
+```
+
+Make LLVM IR of app.c
+```bash
+cmake --build . --target Gen_LLVM_IR
 ```
